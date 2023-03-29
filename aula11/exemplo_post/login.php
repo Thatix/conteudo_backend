@@ -14,6 +14,7 @@ if (insset($_POST['usuario'])){
     //manda abrir outro arquivo, o formuláriode login
     //caso o usuário tente abrir esse arquivo pela URL
     //sem acessar o formulário de login "redirecionamento"
-    header
+    header("Location: form_login.html");
  }
+
 ?>
