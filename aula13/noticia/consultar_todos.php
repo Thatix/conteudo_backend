@@ -5,7 +5,7 @@
 
 
    //cria uma variável com um comando SQL
-   $SQL = "SELECT * FROM usuario";
+   $SQL = "SELECT * FROM noticia";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
@@ -17,9 +17,9 @@
    $resultados = $comando->get_result();
 
    //pega a primeira linhas de resultado da consulta
-   $usuarios = [];
-   while  ($usuario = $resultados->fetch_object()){
-    $usuarios[] = $usuario;
+   $noticias = [];
+   while  ($noticia = $resultados->fetch_object()){
+    $noticias[] = $noticia;
    }
 
 
