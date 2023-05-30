@@ -37,7 +37,7 @@ $alunos[] = [
         </tr>
 
         <?php foreach($alunos as $key => $aluno){?>
-        <tr align="center">
+        <tr aling="center">
             <td><?php echo $aluno["ra"] ?> </td>
             <td><?php echo $aluno["nome"] ?></td>
             <td><?php echo $aluno["turma"] ?></td>
