@@ -1,5 +1,8 @@
 <?php
    
+   //só usuários logados podem inserir
+   require_once "../login/controlar_acesso.php";
+
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
