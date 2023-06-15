@@ -32,7 +32,7 @@
       <td><?=$livro->editora ?></td>
       <td class="text-end" width="25%">
 
-        <a href="formulario.php?id=<?=$livro->idlivro ?>" class="btn btn-primary"> 
+        <a href="atualizar.php?id=<?=$livro->idlivro ?>" class="btn btn-primary"> 
           <i class="fa-solid fa-pen-to-square"></i>
           Atualizar
         </a>

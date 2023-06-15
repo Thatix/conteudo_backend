@@ -8,8 +8,6 @@
    if(isset($_POST['titulo']) && isset($_POST['autor']) &&
       isset($_POST ['ano']) && isset($_POST['editora']))
       {
-         //faz o upload da foto
-         require_once "faz_upload.php";
 
    $titulo = $_POST['titulo'];
    $autor = $_POST['autor'];

@@ -9,7 +9,6 @@
    $ano = $_POST['ano'];
    $editora = $_POST['editora'];
    
-
    //cria uma variável com um comando SQL
    $SQL = "UPDATE `livro` SET `titulo`= ?, `autor`= ?, `ano`= ?, `editora`= ? WHERE  `idlivro`= ? ;";
  
@@ -24,12 +23,3 @@
 
 
    header("Location: index.php");
-
-   
-
-
-
-
-
-
-
