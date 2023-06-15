@@ -1,0 +1,29 @@
+<?php require_once "../template/cabecalho.php"; ?>
+
+<div class="container">
+    <h1>Cadastro de livros</h1>
+    <hr>
+
+    <form action="<?php echo isset($livro) ? "atualizar.php" : "inserir.php"; ?>" method="post" enctype="multipart/form-data">
+        
+        <input type="hidden" name="idlivro" value="<?php echo $livro->idlivro ?? "" ;?>"><br>
+
+        <label>Título</label><br>
+        <input type="text" name="titulo" value="<?php echo $livro->titulo ?? "" ;?>"><br>
+
+        <label>Autor</label><br>
+        <input type="text" name="autor" value="<?php echo $livro->autor ?? "" ;?>"><br>
+
+        <label>Ano</label><br>
+        <input type="text" name="ano" value="<?php echo $livro->ano ?? "" ;?>"><br>
+
+        <label>Editora</label><br>
+        <input type="text" name="editora" value="<?php echo $livro->editora ?? "" ;?>"><br>
+<br>
+        <button type="submit">Inserir</button>
+        
+    </form>
+    
+</div>
+
+<?php require_once "../template/rodape.php"; ?>
