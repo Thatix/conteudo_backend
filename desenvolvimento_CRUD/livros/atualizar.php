@@ -1,3 +1,4 @@
+
 <?php
    
    //importa o arquivo de conexão
@@ -20,6 +21,5 @@
 
    //executa o comando
    $comando->execute();
-
 
    header("Location: index.php");

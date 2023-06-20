@@ -1,12 +1,17 @@
-<?php require_once "../template/cabecalho.php"; ?>
-
-<div class="container">
-    <h1>Cadastro de livros</h1>
-    <hr>
-
-    <form action="<?php echo isset($livro) ? "atualizar.php" : "inserir.php"; ?>" method="post" enctype="multipart/form-data">
-        
-        <input type="hidden" name="idlivro" value="<?php echo isset($livro) ? $livro->id : '' ?>"><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="atualizar.php" method="post">
+        <h1>Atualizar Dados</h1>
+        <hr>
+        <label>ID</label><br>
+        <input type="text" name="idlivro" value="<?= $_GET['id']?>"><br>
 
         <label>Título</label><br>
         <input type="text" name="titulo" value="<?php echo isset($livro) ? $livro->titulo : '' ?>"><br>
@@ -19,11 +24,9 @@
 
         <label>Editora</label><br>
         <input type="text" name="editora" value="<?php echo isset($livro) ? $livro->editora : '' ?>"><br>
-<br>
-        <button type="submit">Inserir</button>
+        <hr>
+        <button type="submit">Atualizar</button>
         
     </form>
-    
-</div>
-
-<?php require_once "../template/rodape.php"; ?>
+</body>
+</html>
