@@ -1,3 +1,5 @@
+<?php require_once "../template/cabecalho.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,3 +32,5 @@
     </form>
 </body>
 </html>
+
+<?php require_once "../template/rodape.php"; ?>
