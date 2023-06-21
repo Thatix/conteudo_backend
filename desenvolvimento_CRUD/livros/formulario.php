@@ -1,4 +1,7 @@
-<?php require_once "../template/cabecalho.php"; ?>
+<?php 
+    require_once "consultar_por_id.php"
+    require_once "../template/cabecalho.php";
+     ?>
 
 <div class="container">
     <h1>Cadastro de livros</h1>
